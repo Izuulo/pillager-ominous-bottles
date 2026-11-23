@@ -35,16 +35,25 @@
     },
     {
       "condition": {
-        "type": "minecraft:inverted",
-        "term": {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "minecraft:type_specific/raider": {
-              "is_captain": true
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:inverted",
+            "term": {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/raider": {
+                  "is_captain": true
+                }
+              }
             }
+          },
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.33
           }
-        }
+        ]
       },
       "entries": [
         {

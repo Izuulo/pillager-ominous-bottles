@@ -1,6 +1,6 @@
 # Pillager Ominous Bottles
 
-A Minecraft **26.3** data pack that makes regular (non-banner) pillagers drop an Ominous Bottle.
+A Minecraft **26.3** data pack that makes regular (non-banner) pillagers drop an Ominous Bottle 33% of the time.
 
 | Level | Chance |
 |-------|--------|
@@ -14,7 +14,7 @@ Copy this folder (or the release zip) into `<world>/datapacks/` and run `/reload
 
 ## Tweaking
 Edit `data/minecraft/loot_table/entities/pillager.json`. The second pool holds the weights
-(amplifier `3` = level IV, weight 4 out of 8). To add an overall drop chance, put a
-`minecraft:random_chance` condition on that pool.
+(amplifier `3` = level IV, weight 4 out of 8). The overall drop chance is the
+`minecraft:random_chance` value (0.33) on that pool.
 
 Note: this overrides the vanilla `entities/pillager` loot table and may conflict with other packs that do the same.
