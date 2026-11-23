@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Non-captain pillagers drop Ominous Bottles (50% IV, others 12.5% each)",
+    "min_format": 121,
+    "max_format": 121
+  }
+}
